@@ -13,24 +13,11 @@
 
 <style>
     .navigationBar a:hover {
-        background-color: rgb(56, 184, 45);
-        color: rgb(49, 144, 98);
+        background-color: rgb(149, 192, 145);
+        color: rgb(109, 196, 213);
 
     }
-    table {
-      border : 1px solid black;
-    }
-    th {
-      border : 1px solid black;
-    }
-    td {
-      border : 1px solid black;
-      text-align: center;
-    }
-    form {
-      border : 1px solid black;
-      padding: 10px;
-    }
+    
     </style>
 <body>
     <body>
@@ -38,21 +25,21 @@
         <table style="width: 100%;">
             <tr>
                 <td>
-            <img height="64" src="img.jfif" alt="image" style="width: 65px;">
+            <img height="64" src="img2.jpg" alt="image" style="width: 65px;">
                 </td>
 
                 <td>
         
     
         <nav class="navigationBar">
-            <a href="http://127.0.0.1:5500/Assign1.2.html" target="_blank"><h1 style="font-size:100;"> Sitename</h1></a>
+            <a href="http://127.0.0.1:5500/Assign1.2.html" target="_blank"><h1 style="font-size:35px;"> Web development</h1></a>
         </nav>
                 </td>
             
             
         <td>
             <nav class="navigationBar">
-                <a href="http://127.0.0.1:5500/Assign1.2.html" target="_blank"> <h4>Contact us</h4></a>
+                <a href="http://127.0.0.1:5500/Assign1.2.html" target="_blank"> <h4>contact us</h4></a>
             </nav>
         </td>
         </tr>
@@ -70,24 +57,27 @@
             <h3>FORM</h3>
              <form action = "javascript:submitform()" onSubmit = "return validate()">
       <label for = "name">Enter Name: </label>
-      <input type = "text" name = "name" id = "name" placeholder="Eg: Snehansu Sekhar Mishra" required><br><br>
+      <input type = "text" name = "name" id = "name" placeholder="Eg: Senahansu Sekhar Mishra" required><br><br>
       <label for="Email">Enter Email:</label>
       <input type="text" name="Email" id="Email" placeholder="Eg:abchxc@gmail.com" required><br><br>
+      <div>
       <label for="genre"> Choose your favourite Genre </label>
-      <input list="genre" name="genre" id="genre">
-      <datalist id="genre">
-        <option value="music">
-        <option value="writing">
-        <option value="film">
-        </datalist><br><br>
-    
-    
-      <input type="checkbox" name="subscribed" id="subscribed" value="subscribed">
-      <label for="subscribed">i have subscribed</label><br><br>
-      <input type="checkbox" name="notsubscribed" id="notsubscribed"value="notsubscribed">
-      <label for="notsubscribed">i have not subscribed</label><br><br>
-        <input type = "submit" name = "submit" value = "Submit">
-             </form>
+      <select name="gener" id="gener">
+        <option value="Horror">Horror</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Action">Action</option>
+      </select>
+      </div><br>
+      <div>
+        <input type="checkbox" name="Subscribe" id="Subscribe">
+        <label for="Subscribe">Subscribed</label>
+      </div><br>
+      <div>
+        <input type = "Submit" name = "Submit" value = "Submit">
+      </div>
+    </form>
+
             
              <script>
                 function validate() {
@@ -103,12 +93,16 @@
                 window.alert("Form Submitted");
               }
         </script>
-        <footer>
-            all rights are reserved 
+
+        <div>
+        <footer align="center">
+
+           <p> All right reserved</p> 
             
            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi quod earum nobis fugit architecto ipsum. Eaque ab nulla cumque! Tenetur amet mollitia vero dolore tempore voluptate beatae nulla officia.
            </p>
         </footer>
+        </div>
         
     
 </body>
